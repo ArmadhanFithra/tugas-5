@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import foto from "./assets/foto.jpg";
+
 
 export default function App() {
   const [active, setActive] = useState("home");
@@ -41,7 +43,7 @@ export default function App() {
             className="flex flex-col md:flex-row items-center justify-center gap-6 min-h-[60vh]"
           >
             <img
-              src="/src/assets/foto.jpg"
+              src={foto}
               alt="profile"
               className="w-40 h-60 rounded-3xl border-4 border-gray-600 shadow-lg object-cover"
             />
